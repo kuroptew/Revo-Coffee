@@ -1,0 +1,1261 @@
+@charset "UTF-8";
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  border: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the border style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+/* Обнулили отступы и границы */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+button,
+main {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Меняет подсчет ширини блока так, чтобы было удобнее верстать */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Задаем блочное отображение тегам */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* Уравнивание поведение шрифтов и элементов для разных браузеров, запрещает увеличение шрифта на айфонах например */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Наследовать семейство шрифта для следующих тэгов */
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* montserrat-regular - vietnamese_latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/montserrat-v24-vietnamese_latin-regular.woff2") format("woff2"), url("../fonts/montserrat-v24-vietnamese_latin-regular.woff") format("woff");
+}
+/* montserrat-900 - vietnamese_latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  src: local(""), url("../fonts/montserrat-v24-vietnamese_latin-900.woff2") format("woff2"), url("../fonts/montserrat-v24-vietnamese_latin-900.woff") format("woff"), url("../fonts/montserrat-v24-vietnamese_latin-900.ttf") format("truetype");
+}
+/* nunito-300 - vietnamese_latin */
+@font-face {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 300;
+  src: local(""), url("../fonts/nunito-v24-vietnamese_latin-300.woff2") format("woff2"), url("../fonts/nunito-v24-vietnamese_latin-300.woff") format("woff"), url("../fonts/nunito-v24-vietnamese_latin-300.ttf") format("truetype");
+}
+/* nunito-regular - vietnamese_latin */
+@font-face {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/nunito-v24-vietnamese_latin-regular.woff2") format("woff2"), url("../fonts/nunito-v24-vietnamese_latin-regular.woff") format("woff"), url("../fonts/nunito-v24-vietnamese_latin-regular.ttf") format("truetype");
+}
+/* nunito-700 - vietnamese_latin */
+@font-face {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("../fonts/nunito-v24-vietnamese_latin-700.woff2") format("woff2"), url("../fonts/nunito-v24-vietnamese_latin-700.woff") format("woff"), url("../fonts/nunito-v24-vietnamese_latin-700.ttf") format("truetype");
+}
+/* nunito-600 - vietnamese_latin */
+@font-face {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  src: local(""), url("../fonts/nunito-v24-vietnamese_latin-600.woff2") format("woff2"), url("../fonts/nunito-v24-vietnamese_latin-600.woff") format("woff"), url("../fonts/nunito-v24-vietnamese_latin-600.ttf") format("truetype");
+}
+/* nunito-300italic - vietnamese_latin */
+@font-face {
+  font-family: "Nunito";
+  font-style: italic;
+  font-weight: 300;
+  src: local(""), url("../fonts/nunito-v24-vietnamese_latin-300italic.woff2") format("woff2"), url("../fonts/nunito-v24-vietnamese_latin-300italic.woff") format("woff"), url("../fonts/nunito-v24-vietnamese_latin-300italic.ttf") format("truetype");
+}
+/* nunito-italic - vietnamese_latin */
+@font-face {
+  font-family: "Nunito";
+  font-style: italic;
+  font-weight: 400;
+  src: local(""), url("../fonts/nunito-v24-vietnamese_latin-italic.woff2") format("woff2"), url("../fonts/nunito-v24-vietnamese_latin-italic.woff") format("woff"), url("../fonts/nunito-v24-vietnamese_latin-italic.ttf") format("truetype");
+}
+body {
+  background: #f2f2f2;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 130px;
+}
+
+.small-section__header {
+  margin-bottom: 6px;
+  font-family: "Nunito";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #415167;
+}
+
+.section__header {
+  margin-bottom: 72px;
+  font-family: "Montserrat";
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 34px;
+  text-align: center;
+  color: #415167;
+}
+
+.price {
+  font-family: "Nunito";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #c7a17a;
+}
+
+.btn-buy,
+.btn-details {
+  font-family: "Nunito";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.btn-buy {
+  background-color: #c7a17a;
+  color: #f9fbff;
+}
+.btn-buy:hover {
+  color: #415167;
+  background-color: #efd9c3;
+}
+
+.btn-details {
+  background-color: transparent;
+}
+.btn-details:hover {
+  color: #c7a17a;
+}
+
+.section-hero {
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #f2f2f2), color-stop(50%, #415167));
+  background: linear-gradient(to right, #f2f2f2 50%, #415167 50%);
+}
+
+.section-hero .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 768px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  z-index: -1;
+}
+
+.hero-left {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 22%;
+  padding-top: 72px;
+  padding-bottom: 64px;
+}
+
+.logo-img {
+  display: block;
+  width: 124px;
+  height: 40px;
+}
+
+.hero__title {
+  font-family: "Montserrat";
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 70px;
+  color: #415167;
+  z-index: 20;
+}
+
+.hero__title > span {
+  background-color: #c7a17a;
+  color: #f9fbff;
+}
+
+.hero-center {
+  width: 60%;
+  min-height: 768px;
+  background-image: url("../img/hero-img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-right {
+  width: 18%;
+  padding-top: 72px;
+  padding-left: 56px;
+  background-color: #415167;
+  color: #edf0f5;
+}
+
+.basket {
+  position: relative;
+  display: block;
+  width: 38px;
+  height: 38px;
+  margin-bottom: 118px;
+}
+
+.basket-main {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  width: 24px;
+  height: 24px;
+}
+
+.basket-products {
+  position: absolute;
+  top: 0;
+  left: 18px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #c7a17a;
+  font-family: "Nunito";
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #f9fbff;
+}
+
+.nav__title {
+  margin-bottom: 30px;
+  font-family: "Nunito";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #edf0f5;
+}
+
+.nav__item {
+  margin-bottom: 28px;
+}
+
+.nav__item:last-child {
+  margin-bottom: 0;
+}
+
+.nav__link {
+  font-family: "Nunito";
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  cursor: pointer;
+  color: #edf0f5;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+.nav__link:hover {
+  color: #c7a17a;
+}
+
+.section-features {
+  padding-top: 86px;
+  padding-bottom: 128px;
+}
+
+.features__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.features__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 25%;
+  margin-right: 66px;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.features__item:last-child {
+  margin-right: 0;
+}
+
+.features__icon {
+  width: 114px;
+  height: 114px;
+  margin-bottom: 42px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.features__icon-1 {
+  background-image: url("../img/features/features-icon-1.svg");
+}
+
+.features__icon-2 {
+  background-image: url("../img/features/features-icon-2.svg");
+}
+
+.features__icon-3 {
+  background-image: url("../img/features/features-icon-3.svg");
+}
+
+.features__icon-4 {
+  background-image: url("../img/features/features-icon-4.svg");
+}
+
+.features__name {
+  margin-bottom: 12px;
+  font-family: "Nunito";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #232c38;
+  text-align: center;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.features-descript {
+  font-family: "Nunito";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #151d28;
+  text-align: center;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.section-coffee {
+  background: -webkit-gradient(linear, left top, right top, color-stop(30%, #415167), color-stop(30%, #f2f2f2));
+  background: linear-gradient(to right, #415167 30%, #f2f2f2 30%);
+}
+
+.section-coffee .container {
+  padding: 86px 0 128px 0;
+}
+
+.coffee__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.coffee__item .coffee__card:first-child {
+  margin-bottom: 32px;
+}
+
+.coffee__img {
+  min-width: 235px;
+  min-height: 256px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img-revo-morning {
+  background-image: url("../img/coffee/revo-morning.jpg");
+}
+
+.img-revo-origin {
+  background-image: url("../img/coffee/revo-origin.jpg");
+}
+
+.img-revo-everyday {
+  background-image: url("../img/coffee/revo-everyday.jpg");
+}
+
+.img-revo-dam {
+  background-image: url("../img/coffee/revo-dam.jpg");
+}
+
+.coffee__info {
+  width: 100%;
+  padding: 42px;
+  background-color: #fff;
+}
+
+.coffee__price {
+  margin-bottom: 8px;
+}
+
+.coffee__name {
+  margin-bottom: 24px;
+  font-family: "Nunito";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #232c38;
+}
+
+.coffee__descript {
+  margin-bottom: 18px;
+  font-family: "Nunito";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #151d28;
+}
+
+.coffee__btn-buy {
+  margin-right: 29px;
+  padding: 7px 16px;
+  border-radius: 19px;
+}
+
+.swiper {
+  padding: 0 130px;
+}
+
+.swiper-slide {
+  opacity: 0.5;
+}
+
+.swiper-slide-visible {
+  opacity: 1;
+}
+
+.swiper-button {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #c7a17a;
+}
+
+.swiper-button-prev svg {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.swiper-button-prev {
+  left: 66px;
+}
+
+.swiper-button-next {
+  right: 66px;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev::after {
+  content: "";
+}
+
+.swiper-button-disabled {
+  visibility: hidden;
+}
+
+.swiper-button:hover svg path {
+  fill: #415167;
+}
+
+.section-giftset {
+  padding: 86px 130px 126px 0px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(77%, #edf0f5), color-stop(77%, #f2f2f2));
+  background: linear-gradient(to right, #edf0f5 77%, #f2f2f2 77%);
+}
+
+.giftset__wrapper-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 0 0 386px;
+  height: 460px;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+}
+
+.giftset__content {
+  display: none;
+  position: relative;
+  width: 92%;
+}
+
+.giftset__content-active {
+  display: block;
+}
+
+.giftset__img {
+  position: absolute;
+  top: 0;
+  left: -256px;
+  width: 490px;
+  min-height: 460px;
+  z-index: 10;
+}
+
+.giftset__img-1 {
+  background: url("../img/giftset/giftset-img.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.giftset__info {
+  height: 460px;
+  padding: 60px;
+  padding-left: 298px;
+  background-color: #fff;
+  z-index: -1;
+}
+
+.giftset__price {
+  margin-bottom: 12px;
+}
+
+.giftset__name {
+  margin-bottom: 12px;
+  font-family: "Nunito";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #232c38;
+}
+
+.giftset__descript {
+  margin-bottom: 24px;
+  font-family: "Nunito";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #151d28;
+}
+
+.wrapper-mountain-nut {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 54px;
+}
+
+.info__nut {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 54px;
+}
+
+.nut-icon,
+.mountain-icon {
+  margin-right: 12px;
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nut-icon {
+  background: url("../img/giftset/coffee-icon.svg");
+}
+
+.info__mountain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mountain-icon {
+  background: url("../img/giftset/mountain-icon.svg");
+}
+
+.kind-nut,
+.mountain-descript {
+  font-family: "Nunito";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #151d28;
+  line-height: 20px;
+  color: #415167;
+}
+
+.nut-name,
+.value-height {
+  font-family: "Nunito";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #415167;
+}
+
+.giftset__list-tabs {
+  width: 10%;
+}
+
+.giftset__item {
+  height: 33.3333333333%;
+}
+
+.giftset__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 8px 8px;
+  font-family: "Montserrat";
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 33px;
+  background-color: #edf0f5;
+  color: #415167;
+  opacity: 0.3;
+}
+
+.giftset__button-active {
+  background-color: #fff;
+  opacity: 1;
+}
+
+.section-combo {
+  background: -webkit-gradient(linear, left top, right top, color-stop(77%, #f2f2f2), color-stop(77%, #415167));
+  background: linear-gradient(to right, #f2f2f2 77%, #415167 77%);
+}
+
+.section-combo .container {
+  padding: 86px 0 128px 0;
+}
+
+.combo__item {
+  width: 360px;
+}
+
+.combo__item:last-child {
+  margin-right: 0;
+}
+
+.combo__img {
+  min-height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.combo__img-1 {
+  background-image: url("../img/combo/combo-img-dam.jpg");
+}
+
+.combo__img-2 {
+  background-image: url("../img/combo/combo-img-everyday.jpg");
+}
+
+.combo__img-3 {
+  background-image: url("../img/combo/combo-img-honey.jpg");
+}
+
+.combo__img-4 {
+  background-image: url("../img/combo/combo-img-dam.jpg");
+}
+
+.combo__img-5 {
+  background-image: url("../img/combo/combo-img-everyday.jpg");
+}
+
+.combo__info {
+  padding: 42px;
+  background: #fff;
+}
+
+.combo__prices-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+.combo__price-actual {
+  margin-right: 20px;
+}
+
+.combo__price-old {
+  font-family: "Nunito";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #415167;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}
+
+.combo__name {
+  margin-bottom: 10px;
+  font-family: "Nunito";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #232c38;
+}
+
+.combo__descript {
+  margin-bottom: 32px;
+  font-family: "Nunito";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #151d28;
+}
+
+.combo__btn-buy {
+  margin-right: 65px;
+  padding: 7px 16px;
+  border-radius: 19px;
+}
+
+.footer {
+  padding-top: 19px;
+  padding-bottom: 19px;
+  background-color: #edf0f5;
+}
+
+.footer__descript {
+  font-family: "Nunito";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #415167;
+}

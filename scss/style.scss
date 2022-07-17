@@ -1,0 +1,639 @@
+@import "normalize.scss";
+@import "reset.scss";
+@import "fonts.scss";
+
+$mainColor: #415167;
+$supColor: #c7a17a;
+$blackColor: #232c38;
+$darkGrayColor: #151d28;
+$lightGrayColor: #edf0f5;
+$backgorundPageColor: #f2f2f2;
+$fontMain: "Nunito";
+$fontMainTitles: "Montserrat";
+
+@mixin fontProductName {
+  font-family: $fontMain;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: $blackColor;
+}
+
+@mixin fontDescription {
+  font-family: $fontMain;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: $darkGrayColor;
+}
+
+@mixin fontBtn {
+  font-family: $fontMain;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+}
+
+body {
+  background: $backgorundPageColor;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 130px;
+}
+
+.small-section__header {
+  margin-bottom: 6px;
+  font-family: $fontMain;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: $mainColor;
+}
+
+.section__header {
+  margin-bottom: 72px;
+  font-family: $fontMainTitles;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 34px;
+  text-align: center;
+  color: $mainColor;
+}
+
+.price {
+  font-family: $fontMain;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: $supColor;
+}
+
+.btn-buy,
+.btn-details {
+  @include fontBtn();
+  transition: 0.4s ease;
+}
+
+.btn-buy {
+  background-color: $supColor;
+  color: #f9fbff;
+
+  &:hover{
+    color: $mainColor;
+    background-color: #efd9c3;
+  }
+}
+
+.btn-details {
+  background-color: transparent;
+
+  &:hover{
+    color: $supColor;
+  }
+}
+
+// Section-Hero
+.section-hero {
+  background: linear-gradient(to right,$backgorundPageColor 50%, $mainColor 50%);
+}
+
+.section-hero .container {
+  display: flex;
+  min-height: 768px;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: stretch;
+  z-index: -1;
+}
+
+.hero-left {
+  position:relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 22%;
+  padding-top: 72px;
+  padding-bottom: 64px;
+}
+
+.logo-img {
+  display: block;
+  width: 124px;
+  height:40px;
+}
+
+.hero__title {
+  font-family: $fontMainTitles;
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 70px;
+  color: $mainColor;
+  z-index:20;
+}
+
+.hero__title>span {
+  background-color: $supColor;
+  color: #f9fbff;
+}
+
+.hero-center {
+  width: 60%;
+  min-height: 768px;
+  background-image: url("../img/hero-img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-right {
+  width: 18%;
+  padding-top: 72px;
+  padding-left: 56px;
+  background-color: $mainColor;
+  color: $lightGrayColor;
+}
+
+.basket {
+  position: relative;
+  display: block;
+  width: 38px;
+  height: 38px;
+  margin-bottom: 118px;
+}
+
+.basket-main {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  width: 24px;
+  height: 24px;
+}
+
+.basket-products {
+  position: absolute;
+  top: 0;
+  left: 18px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: $supColor;
+  font-family: $fontMain;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #f9fbff;
+}
+
+.nav__title {
+  margin-bottom: 30px;
+  font-family: $fontMain;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: $lightGrayColor;
+}
+
+.nav__item {
+  margin-bottom: 28px;
+}
+
+.nav__item:last-child {
+  margin-bottom: 0;
+}
+
+.nav__link {
+  font-family: $fontMain;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  cursor: pointer;
+  color: $lightGrayColor;
+  transition: 0.4s ease;
+
+  &:hover {
+    color: $supColor;
+  }
+}
+
+//Section-Features
+.section-features {
+  padding-top: 86px;
+  padding-bottom: 128px;
+}
+
+.features__list {
+  display: flex;
+}
+
+.features__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  margin-right: 66px;
+  transition: 0.4s ease;
+}
+
+.features__item:last-child {
+  margin-right: 0;
+}
+
+.features__icon {
+  width: 114px;
+  height: 114px;
+  margin-bottom: 42px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.features__icon-1 {
+  background-image: url("../img/features/features-icon-1.svg");
+}
+
+.features__icon-2 {
+  background-image: url("../img/features/features-icon-2.svg");
+}
+
+.features__icon-3 {
+  background-image: url("../img/features/features-icon-3.svg");
+}
+
+.features__icon-4 {
+  background-image: url("../img/features/features-icon-4.svg");
+}
+
+.features__name {
+  margin-bottom: 12px;
+  @include fontProductName();
+  text-align: center;
+  transition: 0.4s ease;
+}
+
+.features-descript {
+  @include fontDescription();
+  text-align: center;
+  transition: 0.4s ease;
+}
+
+//Section-Coffee
+.section-coffee {
+  background: linear-gradient(to right, $mainColor 30%, $backgorundPageColor 30%);
+}
+
+.section-coffee .container {
+  padding: 86px 0 128px 0;
+}
+
+.coffee__card {
+  display: flex;
+}
+
+.coffee__item  {
+  .coffee__card:first-child {  margin-bottom: 32px;}
+
+}
+
+.coffee__img {
+  min-width: 235px;
+  min-height: 256px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img-revo-morning {
+  background-image: url("../img/coffee/revo-morning.jpg");
+}
+
+.img-revo-origin {
+  background-image: url("../img/coffee/revo-origin.jpg");
+}
+
+.img-revo-everyday {
+  background-image: url("../img/coffee/revo-everyday.jpg");
+}
+
+.img-revo-dam {
+  background-image: url("../img/coffee/revo-dam.jpg");
+}
+
+.coffee__info {
+  width: 100%;
+  padding: 42px;
+  background-color: #fff;
+}
+
+.coffee__price {
+  margin-bottom: 8px;
+}
+
+.coffee__name {
+  margin-bottom: 24px;
+  @include fontProductName();
+}
+
+.coffee__descript {
+  margin-bottom: 18px;
+  @include fontDescription();
+}
+
+.coffee__btn-buy {
+  margin-right: 29px;
+  padding: 7px 16px;
+  border-radius: 19px;
+}
+
+
+.swiper {
+  padding:0 130px;
+}
+
+.swiper-slide {
+  opacity: 0.5;
+}
+
+.swiper-slide-visible {
+  opacity: 1;
+}
+
+.swiper-button {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: $supColor;
+}
+
+.swiper-button-prev svg {
+  transform: rotate(180deg);
+}
+
+.swiper-button-prev {
+  left: 66px;
+}
+
+.swiper-button-next {
+  right: 66px;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev::after {
+  content: '';
+}
+
+.swiper-button-disabled {
+  visibility: hidden;
+}
+
+.swiper-button:hover svg path {
+  fill: $mainColor;
+}
+
+//Section-Giftset
+.section-giftset {
+  padding: 86px 130px 126px 0px;
+  background: linear-gradient(to right, $lightGrayColor 77%, $backgorundPageColor 77%);
+}
+
+.giftset__wrapper-content {
+  display: flex;
+  padding: 0 0 0 386px;
+  height: 460px;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.giftset__content {
+  display: none;
+  position: relative;
+  width: 92%;
+}
+
+.giftset__content-active {
+  display: block;
+}
+
+.giftset__img {
+  position: absolute;
+  top: 0;
+  left: -256px;
+  width: 490px;
+  min-height: 460px;
+  z-index: 10;
+}
+
+.giftset__img-1 {
+  background: url("../img/giftset/giftset-img.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.giftset__info {
+  height: 460px;
+  padding: 60px;
+  padding-left: 298px;
+  background-color: #fff;
+  z-index: -1;
+}
+
+.giftset__price {
+  margin-bottom: 12px;
+}
+
+.giftset__name {
+  margin-bottom: 12px;
+  @include fontProductName();
+}
+
+.giftset__descript {
+  margin-bottom: 24px;
+  @include fontDescription();
+}
+
+.wrapper-mountain-nut {
+  display: flex;
+  margin-bottom: 54px;
+}
+
+.info__nut {
+  display: flex;
+  align-items: center;
+  margin-right: 54px;
+}
+
+.nut-icon,
+.mountain-icon {
+  margin-right: 12px;
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nut-icon {
+  background: url("../img/giftset/coffee-icon.svg");
+}
+
+.info__mountain {
+  display: flex;
+  align-items: center;
+}
+
+
+.mountain-icon {
+  background: url("../img/giftset/mountain-icon.svg");
+}
+
+.kind-nut,
+.mountain-descript {
+  @include fontDescription();
+  line-height: 20px;
+  color: $mainColor;
+}
+
+.nut-name,
+.value-height {
+  font-family: $fontMain;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: $mainColor;
+}
+
+.giftset__list-tabs {
+  width: 10%;
+}
+
+.giftset__item {
+  height: calc(100% / 3);
+}
+
+.giftset__button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 8px 8px;
+  font-family: $fontMainTitles;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 33px;
+  background-color: $lightGrayColor;
+  color: $mainColor;
+  opacity: 0.3;
+}
+
+.giftset__button-active {
+  background-color: #fff;
+  opacity: 1;
+}
+
+//Section-Combo
+.section-combo {
+  background: linear-gradient(to right, #f2f2f2 77%, $mainColor 77%);
+}
+
+.section-combo .container {
+  padding: 86px 0 128px 0;
+}
+
+.combo__item {
+  width: 360px;
+}
+
+.combo__item:last-child {
+  margin-right: 0;
+}
+
+.combo__img {
+  min-height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.combo__img-1 {
+  background-image: url("../img/combo/combo-img-dam.jpg");
+}
+
+.combo__img-2 {
+  background-image: url("../img/combo/combo-img-everyday.jpg");
+}
+
+.combo__img-3 {
+  background-image: url("../img/combo/combo-img-honey.jpg");
+}
+
+.combo__img-4 {
+  background-image: url("../img/combo/combo-img-dam.jpg");
+}
+
+.combo__img-5 {
+  background-image: url("../img/combo/combo-img-everyday.jpg");
+}
+
+.combo__info {
+  padding: 42px;
+  background: #fff;
+}
+
+.combo__prices-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.combo__price-actual {
+  margin-right: 20px;
+}
+
+.combo__price-old {
+  font-family: $fontMain;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: $mainColor;
+  text-decoration-line: line-through;
+}
+
+.combo__name {
+  margin-bottom: 10px;
+  @include fontProductName();
+}
+
+.combo__descript {
+  margin-bottom: 32px;
+  @include fontDescription();
+}
+
+.combo__btn-buy {
+  margin-right: 65px;
+  padding: 7px 16px;
+  border-radius: 19px;
+}
+
+//Footer
+.footer {
+  padding-top: 19px;
+  padding-bottom: 19px;
+  background-color: $lightGrayColor;
+}
+
+.footer__descript {
+  font-family: $fontMain;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: $mainColor;
+}
