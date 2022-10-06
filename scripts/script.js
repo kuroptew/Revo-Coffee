@@ -48,5 +48,4 @@ let currentYear = dateNow.getFullYear()
 
 footer.textContent += currentYear;
 
-
 console.log(footer.textContent);
